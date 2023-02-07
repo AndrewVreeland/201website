@@ -5,10 +5,18 @@
     <title>lab01</title>
     <style>
         body {
-            background-color: crimson ;
+            background-color: crimson;
             text-align: center
         }
-        p {background-color: black; color: olive; border:  solid #3286be; border-radius: 50px; text-align: center; font-family: 'Times New Roman', Times, serif;  }
+
+        p {
+            background-color: black;
+            color: olive;
+            border: solid #3286be;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
     </style>
 </head>
 
@@ -18,11 +26,11 @@
     </header>
 
     <main>
-        
-        <p style="margin-left:  870px; margin-right: 870px;">What is your name?</p>
-        <p style="margin-left:  850px; margin-right: 850px;">What is your favorite food?</p>
-        <p style="margin-left:  820px; margin-right: 820px;">Do you like pineapple on your pizza?</p>
-        <p style="margin-left:  800px; margin-right: 800px;">Do you prefer stormy skies or sunny skies?</p>
+
+        <p style="margin-left:  870px; margin-right: 870px;"> What is your name? </p>
+        <p style="margin-left:  850px; margin-right: 850px;"> What is your favorite food? </p>
+        <p style="margin-left:  820px; margin-right: 820px;"> Do you like pineapple on your pizza? </p>
+        <p style="margin-left:  800px; margin-right: 800px;"> Do you prefer stormy skies or sunny skies? </p>
 
     </main>
     <footer>
@@ -31,29 +39,19 @@
     <script>
         console.log('Hello World');
 
-        let questionOneResponse = prompt('What is your name?');
-
+        let qOneRes = prompt('What is your name?');
         // const lowercaseQuestionOneRespone = questionOneResponse.toLowerCase();
-
-        alert('Welcome to my site ' + questionOneResponse + '!');
-
-        let questionTwoResponse = prompt('What is your favorite food?');
-
+        let qTwoRes = prompt('What is your favorite food?');
         // const lowercaseQuestionTwoRespone = questionTwoResponse.toLowerCase();
-
-        // console.log(lowercaseQuestionOneRespone)
-
-        alert('Wow ' + questionOneResponse + ' it so happens that ' + questionTwoResponse + ' is my favorite food as well' + '!');
-
-        let questionThreeResponse = prompt('What is your favorite pie' + '?');
-        alert('nice, ' + questionOneResponse + ' ' + questionThreeResponse + ' is a pretty tasty pie' + '!')
-
+        // console.log(lowercaseQuestionOneRespone);
+        let qThreeRes = prompt('What is your favorite pie' + '?');
         // const lowercaseQuestionThreeResponse = questionThreeResponse.toLowerCase();
-
-        let questionFourResponse = prompt('Do you prefer stormy skies or sunny skies' + '?')
-
-        alert('so let me get this straight, your name is ' + questionOneResponse + ', your favorite food is ' + questionTwoResponse + ', your favorite pie is ' + questionThreeResponse + ', and you prefer ' + questionFourResponse + '.')
-
+        let qFourRes = prompt('Do you prefer stormy skies or sunny skies' + '?');
+        alert('Welcome to my site ' + qOneRes + '!');
+        alert(`wow, ${qOneRes} it so happens that ${qTwoRes} is my favorite food aswell.`);
+        alert(`nice, ${qThreeRes} is a pretty tasty pie`);
+        alert(`so let me get this straight, your name is ${qOneRes},your favorite food is ${qTwoRes}, your favorite pie is ${qThreeRes}, and you prefer ${qFourRes}.`);
+        
 
     </script>
 </body>
